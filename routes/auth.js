@@ -16,6 +16,7 @@ router.get(
   function (req, res) {
     // Successful authentication
     console.log(req.user);
+    console.log(req.user);
     req.session.save(() => {
       res.redirect("/");  // Edit for correct redirect link
     });
